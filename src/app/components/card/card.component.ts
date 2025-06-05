@@ -1,26 +1,23 @@
 import { Component } from '@angular/core';
 
+interface PlanoInterface {
+  infos: InfosInterface;
+}
+
+interface InfosInterface {
+  tipo: string;
+  preco: number;
+}
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  tipo: string = 'Teste';
-  preco: number = 1000;
-
-  plano = {
+  plano: PlanoInterface = {
     infos: {
-      tipo: 'outro exemplo'
+      tipo: 'Simples',
+      preco: 100,
     },
   };
-
-  getFullPrice() {
-    setTimeout(() => {
-      console.log('Set Timeout');
-      this.preco = 1234;
-    }, 4000);
-
-    return 'R$' + this.preco + ',00/Mês';
-  }
 }
