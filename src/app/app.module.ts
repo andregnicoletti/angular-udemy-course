@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CardsModule } from './modules/cards/cards.module';
 import { CardButtonCancelComponent } from './components/card-button-cancel/card-button-cancel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { CardButtonCancelComponent } from './components/card-button-cancel/card-
   ],
   imports: [
     BrowserModule,
-    CardsModule
+    CardsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
