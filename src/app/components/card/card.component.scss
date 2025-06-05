@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&family=Roboto+Mono:wght@100&display=swap');
+// @import "src/styles/variables";
+// @import "../../../styles/variables";
+@import "_variables";
 
 .card {
     max-width: 350px;
-    background-color: #fd7557;
+    // background-color: #fd7557;
+    background-color: $bgColor;
     border-radius: 25px;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
