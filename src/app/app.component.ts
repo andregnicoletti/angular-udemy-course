@@ -10,4 +10,8 @@ export class AppComponent {
 
   cardPlanType = 'Mid';
   cardPlanPrice = 145;
+
+  handlePlanType(text: string) {
+    this.cardPlanType = text;
+  }
 }
