@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { CardsModule } from './modules/cards/cards.module';
 import { CardButtonCancelComponent } from './components/card-button-cancel/card-button-cancel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardVerdeComponent } from './components/card-verde/card-verde.component';
 
 @NgModule({
   declarations: [

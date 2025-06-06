@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&family=Roboto+Mono:wght@100&display=swap');
+// @import "src/styles/variables";
+// @import "../../../styles/variables";
+@import "variables";
+
+.card {
+    max-width: 350px;
+    background-color: greenyellow;
+    border-radius: 25px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__plan {
+        font-size: 22px;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    // ::ng-deep .card-button-cancelar{
+    //     background-color: yellow !important;
+    // }
+
+}    
+

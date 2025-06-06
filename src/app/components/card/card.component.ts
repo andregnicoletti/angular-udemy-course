@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 interface PlanoInterface {
   infos: InfosInterface;
@@ -14,6 +14,10 @@ interface InfosInterface {
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
+
+  @Input() planType: string = '';
+  @Input() planPrice: number = 0;
+
   plano: PlanoInterface = {
     infos: {
       tipo: 'Simples',
