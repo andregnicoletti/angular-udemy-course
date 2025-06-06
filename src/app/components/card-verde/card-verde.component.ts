@@ -7,5 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class CardVerdeComponent {
   @Input() planType: string = 'Intermediário';
-  @Input({ required: true}) planPrice: number = 0;
+  @Input({ required: true }) planPrice: number = 0;
+
+  buttonClicked(valueEmmited: boolean) {
+    console.log('componente pai: ' + valueEmmited);
+  }
 }
